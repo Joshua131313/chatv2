@@ -1,0 +1,11 @@
+.settings {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  height: 100%;
+  padding: 20px;
+}
+.innersettingsroutes {
+  margin-left: 20px;
+  background-color: #fafafa; 
+  border-radius: 10px;
+} 

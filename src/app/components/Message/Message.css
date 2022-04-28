@@ -1,0 +1,129 @@
+.message {
+  align-items: center;
+  gap: 10px;
+  max-width: 90%;
+  word-break: break-all;
+}
+.message .imgloaded {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  align-self: flex-end;
+}
+.message time {
+  font-size: 11px;
+  color: var(--gray-text);
+}
+.messagecontent {
+  align-items: flex-start;
+}
+.msgcontent {
+  color: #fff;
+  border-radius: 30px;
+  font-size: 13px;
+  padding: 5px 10px;
+}
+.msgicon {
+  color: var(--theme-color);
+  font-size: 30px;
+  cursor: initial;
+}
+.msgcontent.hasBgColor {
+  background-color: var(--theme-color);
+}
+.otherusermsg .msgcontent.hasBgColor {
+  background-color: var(--theme-bg);
+}
+.otherusermsg .msgcontent {
+  color: #000;
+}
+/* .usermsg.nextmsgisusers + .otherusermsg.prevmsgisusers {
+  border-radius: 30px 30px 10px 30px
+} */
+
+.nextmsgisusers {
+  margin: 0;
+}
+.groupmsg.nextmsgisusers {
+  padding-left: 35px;
+}
+.nextmsgisusers .msgcontent {
+  border-radius: 10px 30px 30px 10px;
+}
+.prevmsgisusers .msgcontent {
+  border-radius: 10px 30px 30px 30px;
+}
+
+.nextmsgisusers.usermsg .msgcontent {
+  border-radius: 30px 10px 10px 30px;
+}
+.prevmsgisusers.usermsg .msgcontent {
+  border-radius: 30px 10px 30px 30px;
+}
+.nextmsgisusers .imgloaded {
+  display: none;
+}
+.nextmsgisusers.prevmsgisusers + .nextmsgisusers .msgcontent {
+  border-radius: 30px 30px 30px 10px;
+}
+.nextmsgisusers.prevmsgisusers.usermsg + .nextmsgisusers .msgcontent {
+  border-radius: 30px 30px 10px 30px;
+}
+.prevmsgisusers + .nextmsgisusers .msgcontent {
+  border-radius: 30px 30px 30px 10px;
+}
+.prevmsgisusers.usermsg + .nextmsgisusers .msgcontent {
+  border-radius: 30px 30px 10px 30px;
+}
+#root .nextmsgisusers.prevmsgisusers .msgcontent {
+  border-radius: 10px 30px 30px 10px;
+}
+#root .nextmsgisusers.prevmsgisusers.usermsg .msgcontent {
+  border-radius: 30px 10px 10px 30px;
+}
+.message {
+  margin: 10px 0;
+}
+.nextmsgisusers.prevmsgisusers {
+  margin: 2px 0;
+}
+.prevmsgisusers {
+  margin-top: 2px;
+}
+.nextmsgisusers {
+  margin-bottom: 2px;
+}
+.usermsg .msgcontent a {
+  color: #fff;
+}
+
+
+.mmsg > span {
+  display: flex;
+  flex-direction: column;
+}
+
+.linkpreview {
+  margin: 10px 0;
+  width: 300px;
+  max-width: 100%;
+}
+.linkpreview .LowerContainer {
+  background-color: #f8f8f8;
+  border-radius: 0 0 10px 10px;
+}
+.usermsg .abovelinkpreviewmsg {
+  background-color: var(--theme-color);
+  color: #fff;
+  align-self: flex-end;
+  width: auto;
+  margin-bottom: 10px;
+  border-radius: 20px 20px 10px 20px;
+  padding: 5px 10px;
+}
+@media (max-width: 750px) {
+  .linkpreview {
+    width: 200px;
+    height: 300px;
+  }
+}

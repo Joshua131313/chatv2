@@ -1,0 +1,35 @@
+:root {
+  --columns: 300px 1fr
+}
+#root .chat {
+  display: grid;
+  grid-template-columns: var(--columns);
+  height: 100%;
+  padding-right: 10px;
+}
+.chatsection {
+
+}
+.chat hr {
+  margin: 0;
+}
+.emptyboxplaceholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+.emptyboxplaceholder .logo {
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 700px) {
+  :root {
+    --columns: 200px 1fr;
+  }
+}
+@media (max-width: 570px) {
+  :root {
+    --columns: 100px 1fr
+  }
+}

@@ -1,0 +1,13 @@
+.notificationcard {
+  background-color: #f8f8f8;
+  padding: 10px;
+}
+.notificationcard:hover {
+  background-color: var(--light-bg);
+}
+.notificationcard .appbtn {
+  height: 30px;
+  width: auto;
+  padding: 0 15px;
+  align-self: flex-end;
+}

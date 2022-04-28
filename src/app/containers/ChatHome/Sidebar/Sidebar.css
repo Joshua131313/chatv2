@@ -1,0 +1,76 @@
+.sidebar {
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+
+}
+
+.bottomlinks, .sidelinks, .sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.sidelink i, .bottomlinks i, .responsiveicon{
+  font-size: 23px;
+  color: var(--gray-text);
+}
+.activeSideLink i {
+  color: var(--theme-color);
+}
+.sidelink i:hover, .bottomlinks i:hover {
+  color: var(--theme-color);
+}
+@media (max-width: 750px) {
+  .sidelink i {
+    font-size: 18px;
+  }
+  .sidebar .logo {
+    width: 40px; 
+    height: 40px;
+  }
+  .sidebar .user .imgloaded {
+    width: 40px;
+    height: 40px;
+  }
+}
+.responsiveicon {
+  display: none;
+}
+@media (max-width: 430px) {
+  .apphome {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .sidebar {
+    flex-direction: row;
+    height: 50px;
+    padding: 0 30px;
+  }
+  .sidebar .logo {
+    display: none
+  }
+  .sidebar .user {
+    display: none;
+  }
+  .sidelinks {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .bottomlinks {
+    display: none;
+  }
+  #root .routescontainer {
+    height: calc(100vh - 50px)
+  }
+  #root .convosidebar {
+    height: calc(100vh - 70px);
+  }
+  #root .chatsection {
+    height: calc(100vh - 90px);
+  }
+  .responsiveicon {
+    display: block;
+  }
+}

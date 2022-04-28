@@ -1,0 +1,16 @@
+.notificationstoggles {
+  padding: 10px 20px;
+  gap: 20px;
+}
+.notificationsrowpage {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 80px)
+}
+.notificationsrowpage h2 {
+  padding: 10px;
+  margin: 10px;
+}
+.notificationslist {
+  height: 100%;
+}

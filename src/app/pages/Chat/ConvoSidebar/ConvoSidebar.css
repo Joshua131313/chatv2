@@ -1,0 +1,119 @@
+.convosidebar {
+  width: 100%;
+  height: calc(100vh - 20px);
+  overflow-y: auto;
+}
+.convosidebar::-webkit-scrollbar {
+  width: 5px;
+}
+.convosidebar::-webkit-scrollbar-track {
+  background-color: var(--theme-bg);
+}
+.convosidebar .appinput, .convosidebar .adddiv {
+  padding: 10px;
+}
+.convosidebar .appinput input {
+  width: 100%;
+}
+.convouser {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 0;
+  transition: all 0.3s;
+  padding-left: 10px;
+}
+.convouser:hover, .activeconvouser {
+  background-color: #fff;
+}
+.convouser .lastmg {
+  gap: 5px;
+  width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.convouser .imgloaded {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.lastmsgcontainer {
+  display: flex;
+}
+.lastmg  {
+  display: flex;
+  flex-direction: column;
+}
+
+ #root .lastmsgcontent {
+  margin-left: 5px;
+  display: block; 
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+}
+.checkmark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+#root .checkmark i {
+  color: var(--gray-text);
+}
+.seenbyrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.seenbyrow .imgloaded {
+  width: 15px;
+  height: 15px;
+}
+.namesrows {
+}
+#root .defaultname {
+  background-color: transparent;
+  padding: 0;
+  gap: 0;
+  color: #000; 
+  margin-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.defaultname .name {
+  gap: 0;
+  margin-right: 5px;
+  color: #000;
+}
+.namesrows {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.defaultname span::after {
+  content: ', '
+}
+.defaultname span:last-of-type::after {
+  content: '';
+}
+#root .defaultname i {
+  display: none;
+}
+.stickitem {
+  padding-top: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-radius: 20px 00px 0 0;
+  background-color: var(--theme-bg)
+}
+@media (max-width: 570px) {
+  .convouser .lastmg{
+    display: none;
+  }
+}

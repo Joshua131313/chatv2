@@ -1,0 +1,32 @@
+.settingssidebarlink {
+  text-align: center;
+} 
+.settings .sidebarlinks {
+  gap: 20px;
+}
+.settings .sidebarlinks a {
+  color: var(--gray-text);
+  transition:  all 0.3s;
+  padding: 0 15px;
+  border-radius: 30px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.settings .sidebarlinks a:hover {
+  color: var(--theme-color);
+}
+.settingssidebar h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  padding-top: 20px;
+}
+.settings .sidebarlinks .activesidebarlink, .settings .sidebarlinks a:hover {
+  background-color: rgb(199, 219, 255);
+  color: var(--theme-color);
+}
+.sidebarlinks button {
+  width: 100%;
+  margin-top: 20px;
+}

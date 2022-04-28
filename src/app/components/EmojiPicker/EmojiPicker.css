@@ -1,0 +1,12 @@
+.pickerdiv {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+}
+
+#root .pickerdiv span {
+  font-weight: bold;
+}
+.emoji-mart-scroll::-webkit-scrollbar {
+  width: 0;
+}

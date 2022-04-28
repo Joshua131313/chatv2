@@ -1,0 +1,27 @@
+:root {
+  --btn-width: 140px
+}
+.appbtn {
+  background-color: var(--theme-color);
+  color: #fff;
+  width: var(--btn-width);
+  border-radius: 30px;
+  transition: all 0.3s;
+  height: 40px;
+}
+.appbtn:hover {
+  box-shadow: var(--light-theme-shadow);
+}
+.appbtn:active {
+  transform: scale(var(--scale-factor));
+}
+.appbtn.border {
+  background-color: #fff;
+  color: var(--theme-color);
+  border: solid 1px;
+}
+.appbtn.border:hover {
+  background-color: var(--theme-color);
+  color: #fff;
+  border: solid 1px transparent
+}
